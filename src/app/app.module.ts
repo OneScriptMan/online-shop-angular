@@ -11,6 +11,9 @@ import { BasketComponent } from './components/basket/basket.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { BaseComponent } from './components/base/base.component';
 import { DialogBoxComponent } from './components/dialog-box/dialog-box.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,17 @@ import { DialogBoxComponent } from './components/dialog-box/dialog-box.component
     BasketComponent,
     ProductDetailsComponent,
     BaseComponent,
-    DialogBoxComponent
+    DialogBoxComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
