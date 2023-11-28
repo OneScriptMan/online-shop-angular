@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 10px;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  max-width: fit-content;
+}
+.card {
+  max-width: 470px;
+  margin: 5px;
+  background-color: rgb(244, 240, 240);
+  color: black;
+  display: flex;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  max-width: 40%;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+.card-content {
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  text-wrap: nowrap;
+  color: black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -1,1 +1,28 @@
-<p>product-details works!</p>
+<div class="container">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>{{ product?.title }}</mat-card-title>
+    </mat-card-header>
+    <div class="card-info">
+      <img class="image" mat-card-image [src]="product?.image" />
+
+      <mat-card-content class="card-content">
+        <p>Цена: {{ product?.price | currency : "RUB" : "symbol-narrow" }}</p>
+        <p>{{ product?.configure?.display }}</p>
+        <p>Процессор: {{ product?.configure?.processor }}</p>
+        <p>Память: {{ product?.configure?.memory }}</p>
+        <p>SSD: {{ product?.configure?.SSD }}</p>
+      </mat-card-content>
+    </div>
+    <mat-card-actions>
+      <button class="button" mat-button>В корзину</button>
+      <button
+        class="button"
+        mat-button
+        [routerLink]="['/product', product?.id]"
+      >
+        Подробнее
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

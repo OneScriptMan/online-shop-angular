@@ -30,3 +30,38 @@
   color: black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.admin-panel {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(244, 240, 240);
+}
+
+.admin-panel-title {
+  color: black;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.no-select {
+  cursor: pointer;
+  user-select: none;
+}
+
+.icon-home {
+  margin-right: 10px;
+  color: black;
+}
+
+.toolbar-button {
+  margin-left: 5px;
+  &:first-child {
+    margin-left: 0;
+  }
+}

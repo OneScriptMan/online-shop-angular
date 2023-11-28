@@ -17,6 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { CurrencyPipe } from '@angular/common';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CurrencyPipe } from '@angular/common';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
     HttpClientModule,
     CurrencyPipe,
   ],
