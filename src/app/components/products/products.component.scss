@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 10px;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  max-width: fit-content;
+}
+.card {
+  max-width: 220px;
+  margin: 5px;
+  background-color: rgb(244, 240, 240);
+  color: black;
+}
+
+.image {
+  max-width: 90%;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.button {
+  text-wrap: nowrap;
+  color: black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}

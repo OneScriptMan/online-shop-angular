@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Macbook Pro",
+      "price": 200000,
+      "image": "../../../assets/images/Macbook-16-pro.jpeg",
+      "configure": {
+        "processor": "Apple M1 Pro",
+        "memory": "16GB",
+        "SSD": "1TB",
+        "display": "16 дюймов"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Macbook Air",
+      "price": 170000,
+      "image": "../../../assets/images/Macbook-16-pro.jpeg",
+      "configure": {
+        "processor": "Apple M1",
+        "memory": "8GB",
+        "SSD": "512GB",
+        "display": "13 дюймов"
+      }
+    }
+  ]
+}
