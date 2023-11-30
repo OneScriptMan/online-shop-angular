@@ -4,6 +4,8 @@ export interface IProducts {
   price: number;
   image?: string;
   configure: IProductDetails;
+
+  count?: number;
 }
 
 export interface IProductDetails {

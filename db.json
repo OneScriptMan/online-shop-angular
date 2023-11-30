@@ -23,6 +23,19 @@
         "SSD": "512GB",
         "display": "13 дюймов"
       }
+    },
+    {
+      "id": 3,
+      "title": "7",
+      "price": "1",
+      "image": "../../../assets/images/Macbook-16-pro.jpeg",
+      "configure": {
+        "processor": "1",
+        "memory": "1",
+        "SSD": "1",
+        "display": "1"
+      }
     }
-  ]
+  ],
+  "basket": []
 }
