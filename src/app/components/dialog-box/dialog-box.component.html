@@ -1,1 +1,29 @@
-<p>dialog-box works!</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Название</mat-label>
+    <input matInput formControlName="title" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Цена</mat-label>
+    <input matInput formControlName="price" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Процессор</mat-label>
+    <input matInput formControlName="processor" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Память</mat-label>
+    <input matInput formControlName="memory" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>SSD</mat-label>
+    <input matInput formControlName="SSD" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Дисплей</mat-label>
+    <input matInput formControlName="display" />
+  </mat-form-field>
+
+  <button class="button" mat-button (click)="onSubmit()">Добавить товар</button>
+  <button class="button" mat-button (click)="onNoClick()">Отмена</button>
+</form>

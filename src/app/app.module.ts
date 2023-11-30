@@ -18,6 +18,9 @@ import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { CurrencyPipe } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatDialogModule,
     HttpClientModule,
     CurrencyPipe,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

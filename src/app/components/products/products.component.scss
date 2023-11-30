@@ -13,7 +13,7 @@
   max-width: fit-content;
 }
 .card {
-  max-width: 220px;
+  max-width: 280px;
   margin: 5px;
   background-color: rgb(244, 240, 240);
   color: black;
@@ -27,6 +27,7 @@
 
 .button {
   text-wrap: nowrap;
+  width: fit-content;
   color: black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }

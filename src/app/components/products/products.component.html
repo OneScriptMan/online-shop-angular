@@ -20,7 +20,7 @@
     <mat-card-header>
       <mat-card-title>{{ product.title }}</mat-card-title>
     </mat-card-header>
-    <img class="image" mat-card-image [src]="product.image" />
+    <img class="image" mat-card-image [src]="product?.image" />
     <mat-card-content>
       <p>Цена: {{ product.price | currency : "RUB" : "symbol-narrow" }}</p>
       <p>{{ product.configure.display }}</p>
@@ -31,6 +31,11 @@
       <button class="button" mat-button [routerLink]="['/product', product.id]">
         Подробнее
       </button>
+      <button mat-button class="button" [matMenuTriggerFor]="menu">Ред</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="deleteItem(product.id)">Удалить</button>
+        <button mat-menu-item>Редактировать</button>
+      </mat-menu>
     </mat-card-actions>
   </mat-card>
 </div>
