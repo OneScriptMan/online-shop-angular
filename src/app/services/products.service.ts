@@ -18,11 +18,11 @@ export class ProductsService {
     return this.http.get<IProductDetails>(`${this.url}/${id}`);
   }
 
-  postProduct(product: IProducts) {
+  postProduct(product: IProducts): Observable<IProducts> {
     return this.http.post<IProducts>(this.url, product);
   }
 
-  deleteProduct(id: number) {
+  deleteProduct(id: number): Observable<IProducts> {
     return this.http.delete<IProducts>(`${this.url}/${id}`);
   }
 }

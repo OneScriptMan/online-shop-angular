@@ -34,13 +34,6 @@ export class ProductsComponent implements OnInit {
       });
   }
 
-  // deleteItem(id: number): void {
-  //   this.productsService
-  //     .deleteProduct(id)
-  //     .subscribe((data) => this.products?.splice(id, 1));
-  //   this.ChangeDetectorRef.detectChanges();
-  // }
-
   deleteItem(id: number): void {
     this.productsService.deleteProduct(id).subscribe({
       next: () => {
@@ -48,7 +41,7 @@ export class ProductsComponent implements OnInit {
         if (index !== undefined && index !== -1) {
           this.products?.splice(index, 1);
         }
-        this.ChangeDetectorRef.detectChanges();
+        // this.ChangeDetectorRef.detectChanges();
       },
     });
   }
@@ -62,6 +55,7 @@ export class ProductsComponent implements OnInit {
     const dialogRef = this.dialog.open(DialogBoxComponent, dialogConfig);
 
     dialogRef.afterClosed().subscribe((data) => {
+      if (!data) return;
       this.postData(data);
     });
   }
